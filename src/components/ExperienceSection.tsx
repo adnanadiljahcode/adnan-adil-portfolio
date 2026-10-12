@@ -14,13 +14,13 @@ const experiences: ExperienceItem[] = [
     company: "EUSOPHT",
     dateRange: "2026-Present",
     role: "Intern",
-    link: "https://cozy-fern-menu.lovable.app/",
+    link: "https://adnan-designs-showcase.lovable.app/",
   },
   {
     company: "SSUET",
     dateRange: "2000-2001",
-    role: "Java Language (TA)",
-    link: "https://cozy-fern-menu.lovable.app/",
+    role: "Java (TA)",
+    link: "https://adnan-designs-showcase.lovable.app/",
   },
 ];
 
