@@ -11,10 +11,10 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: "Verve",
-    dateRange: "2024-Present",
-    role: "Design Director",
-    link: "/verve",
+    company: "EUSOPHT",
+    dateRange: "2026-Present",
+    role: "Intern",
+    link: "https://cozy-fern-menu.lovable.app/",
   },
   {
     company: "Spotify",
