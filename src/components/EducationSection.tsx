@@ -8,14 +8,14 @@ interface EducationItem {
 
 const education: EducationItem[] = [
   {
-    degree: "Master of Fine Arts",
-    dateRange: "2010-2012",
-    institution: "Rhode Island School of Design",
+    degree: "Master of Science",
+    dateRange: "2002-2004",
+    institution: "San Diego State University",
   },
   {
-    degree: "Interaction Design",
-    dateRange: "2011-2012",
-    institution: "Copenhagen Institute of Interaction Design",
+    degree: "Bachelor of Science",
+    dateRange: "1998-2001",
+    institution: "Sir Syed University of Engineering & Technology",
   },
 ];
 
