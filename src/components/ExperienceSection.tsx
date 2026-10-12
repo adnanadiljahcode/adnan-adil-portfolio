@@ -38,7 +38,7 @@ const experiences: ExperienceItem[] = [
 
 const personalProjects: ExperienceItem[] = [
   {
-    company: "Explorations + Motion",
+    company: "Easy Bookings",
     dateRange: "",
     role: "Personal Project",
     link: "/explorations",
