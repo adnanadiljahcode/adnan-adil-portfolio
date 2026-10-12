@@ -36,8 +36,8 @@ const HeroSection = () => {
         {/* Large Display Headline */}
         <motion.div className="mb-16" variants={itemVariants}>
           <h1 className="heading-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-foreground leading-[0.9] tracking-tight">
-            <span className="block">MAYA</span>
-            <span className="block mt-2 md:mt-4">CHEN</span>
+            <span className="block">ADNAN</span>
+            <span className="block mt-2 md:mt-4">ADIL</span>
           </h1>
         </motion.div>
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
           className="text-mono text-sm md:text-base tracking-widest text-foreground/70 uppercase mb-20"
           variants={itemVariants}
         >
-          Product Design & Creative Direction
+          Web Developer
         </motion.p>
 
         {/* Featured Image */}
@@ -68,7 +68,7 @@ const HeroSection = () => {
           className="body-text max-w-xl mx-auto mt-16 text-center"
           variants={itemVariants}
         >
-          Crafting products with clarity and purpose for over a decade.
+          Building clean, fast and modern web experiences.
         </motion.p>
       </motion.div>
     </section>

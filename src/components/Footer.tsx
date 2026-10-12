@@ -33,8 +33,8 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-foreground/10">
-          <p className="text-mono text-xs text-foreground/50">© Maya Chen 2024</p>
-          <p className="text-mono text-xs text-foreground/50">Made in California</p>
+          <p className="text-mono text-xs text-foreground/50">© Adnan Adil 2026</p>
+          <p className="text-mono text-xs text-foreground/50">Made in Karachi</p>
         </div>
       </div>
     </motion.footer>

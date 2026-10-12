@@ -18,7 +18,7 @@ const Navigation = ({ currentPage, currentIndex = "01" }: NavigationProps) => {
             className="text-foreground hover:opacity-80 transition-opacity duration-200"
           >
             <div className="w-10 h-10 rounded-full bg-foreground/10 border border-foreground/20 flex items-center justify-center">
-              <span className="heading-display text-lg">M</span>
+              <span className="heading-display text-lg">A</span>
             </div>
           </Link>
 
@@ -34,7 +34,7 @@ const Navigation = ({ currentPage, currentIndex = "01" }: NavigationProps) => {
 
           {/* Right - Location & Time */}
           <div className="text-right text-mono text-xs text-foreground/70 leading-relaxed hidden md:block">
-            <div>San Francisco</div>
+            <div>Karachi</div>
             <div>{new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' })}</div>
           </div>
         </div>
