@@ -40,8 +40,8 @@ const personalProjects: ExperienceItem[] = [
   {
     company: "Easy Bookings",
     dateRange: "",
-    role: "Personal Project",
-    link: "/explorations",
+    role: "portrait-time-picker.lovable.app",
+    link: "portrait-time-picker.lovable.app",
   },
 ];
 
