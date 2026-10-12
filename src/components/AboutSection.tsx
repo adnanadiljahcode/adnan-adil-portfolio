@@ -20,7 +20,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Over a decade of experience crafting digital products, brands and experiences that are used by millions of people every day.
+          I build websites and web applications that are fast, reliable and easy to use.
         </motion.p>
         
         <motion.p 
@@ -30,11 +30,10 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Embracing growth, I continually combine extensive experience in{" "}
-          <span className="text-emphasis">Product</span>,{" "}
-          <span className="text-emphasis">Motion</span>,{" "}
-          <span className="text-emphasis">Sound</span> and{" "}
-          <span className="text-emphasis">Brand</span> Design.
+          My focus is turning ideas into working products — from{" "}
+          <span className="text-emphasis">clean interfaces</span> and{" "}
+          <span className="text-emphasis">responsive layouts</span> to{" "}
+          <span className="text-emphasis">solid, maintainable code</span>.
         </motion.p>
         
         <motion.p 
@@ -44,7 +43,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          I am dedicated to shaping a better future through Design. My approach always puts people first — from clients to users.
+          I care about the details — performance, accessibility, and experiences that just work on any device.
         </motion.p>
         
         <motion.p 

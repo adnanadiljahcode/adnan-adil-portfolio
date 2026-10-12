@@ -8,13 +8,13 @@ const ContactSection = () => {
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const sfTime = now.toLocaleTimeString("en-US", {
-        timeZone: "America/Los_Angeles",
+      const localTime = now.toLocaleTimeString("en-US", {
+        timeZone: "Asia/Karachi",
         hour: "numeric",
         minute: "2-digit",
         hour12: true,
       });
-      setCurrentTime(sfTime);
+      setCurrentTime(localTime);
     };
 
     updateTime();
@@ -25,21 +25,9 @@ const ContactSection = () => {
   const contactLinks = [
     {
       label: "Email",
-      text: "hello@mayachen.design",
-      href: "mailto:hello@mayachen.design",
+      text: "adnan.adil.jah@gmail.com",
+      href: "mailto:adnan.adil.jah@gmail.com",
       external: false,
-    },
-    {
-      label: "LinkedIn",
-      text: "linkedin.com/in/mayachen",
-      href: "https://linkedin.com/in/mayachen",
-      external: true,
-    },
-    {
-      label: "Dribbble",
-      text: "dribbble.com/mayachen",
-      href: "https://dribbble.com/mayachen",
-      external: true,
     },
   ];
 
@@ -94,7 +82,7 @@ const ContactSection = () => {
           <h4 className="heading-display text-xl text-foreground mb-8">Location</h4>
           <div className="space-y-2">
             <p className="text-mono text-sm text-foreground/70 flex items-center gap-2">
-              San Francisco, USA <span className="text-lg">🇺🇸</span>
+              Karachi, Pakistan <span className="text-lg">🇵🇰</span>
             </p>
             <p className="text-mono text-sm text-foreground/50">
               {currentTime} local time
