@@ -22,18 +22,6 @@ const experiences: ExperienceItem[] = [
     role: "Staff Designer",
     link: "/spotify",
   },
-  {
-    company: "Figma",
-    dateRange: "2016-2020",
-    role: "Senior Designer",
-    link: "/figma",
-  },
-  {
-    company: "Notion",
-    dateRange: "2012-2016",
-    role: "Senior Designer",
-    link: "/notion",
-  },
 ];
 
 const personalProjects: ExperienceItem[] = [
