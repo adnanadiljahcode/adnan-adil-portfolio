@@ -17,10 +17,10 @@ const experiences: ExperienceItem[] = [
     link: "https://cozy-fern-menu.lovable.app/",
   },
   {
-    company: "Spotify",
-    dateRange: "2020-2024",
-    role: "Staff Designer",
-    link: "/spotify",
+    company: "SSUET",
+    dateRange: "2000-2001",
+    role: "Java Language (TA)",
+    link: "https://cozy-fern-menu.lovable.app/",
   },
 ];
 
