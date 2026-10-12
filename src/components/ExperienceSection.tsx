@@ -43,6 +43,12 @@ const personalProjects: ExperienceItem[] = [
     role: "https://portrait-time-picker.lovable.app/",
     link: "https://portrait-time-picker.lovable.app/",
   },
+  {
+    company: "Little Fern's Cozy Corner",
+    dateRange: "",
+    role: "https://cozy-fern-menu.lovable.app/",
+    link: "https://cozy-fern-menu.lovable.app/",
+  },
 ];
 
 const ExperienceCard = ({ item, index }: { item: ExperienceItem; index: number }) => {
