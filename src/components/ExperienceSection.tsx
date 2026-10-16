@@ -12,13 +12,13 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     company: "EUSOPHT",
-    dateRange: "2026-Present",
+    dateRange: "Present-2026",
     role: "Intern",
     link: "https://adnan-designs-showcase.lovable.app/",
   },
   {
     company: "SSUET",
-    dateRange: "2000-2001",
+    dateRange: "2001-2000",
     role: "Java (TA)",
     link: "https://adnan-designs-showcase.lovable.app/",
   },
