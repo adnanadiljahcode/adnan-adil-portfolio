@@ -9,12 +9,12 @@ interface EducationItem {
 const education: EducationItem[] = [
   {
     degree: "Master of Science",
-    dateRange: "2002-2004",
+    dateRange: "2004-2002",
     institution: "San Diego State University",
   },
   {
     degree: "Bachelor of Science",
-    dateRange: "1998-2001",
+    dateRange: "2001-1998",
     institution: "Sir Syed University of Engineering & Technology",
   },
 ];
