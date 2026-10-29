@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 interface NavigationProps {
@@ -7,6 +8,53 @@ interface NavigationProps {
 
 const Navigation = ({ currentPage, currentIndex = "01" }: NavigationProps) => {
   const location = useLocation();
+  const [activeSection, setActiveSection] = useState({
+    page: currentPage || "Home",
+    index: currentIndex,
+  });
+
+  useEffect(() => {
+    const sectionLabels: Record<string, string> = {
+      work: "Experience",
+      education: "Education",
+      about: "About",
+      contact: "Contact",
+    };
+    const sections = Array.from(
+      document.querySelectorAll<HTMLElement>("main > section, footer[id]")
+    );
+
+    const updateActiveSection = () => {
+      const activationLine = window.innerHeight * 0.35;
+      let currentSection = sections[0];
+
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= activationLine) {
+          currentSection = section;
+        } else {
+          break;
+        }
+      }
+
+      if (!currentSection) return;
+
+      const id = currentSection.id;
+      const sectionIndex = sections.indexOf(currentSection) + 1;
+      setActiveSection({
+        page: sectionLabels[id] || "Home",
+        index: String(sectionIndex).padStart(2, "0"),
+      });
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, [location.pathname]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
@@ -25,10 +73,10 @@ const Navigation = ({ currentPage, currentIndex = "01" }: NavigationProps) => {
           {/* Center - Current Section */}
           <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
             <div className="nav-number">
-              <span>{currentIndex}</span>
+              <span>{activeSection.index}</span>
             </div>
             <span className="text-mono text-sm text-foreground/80">
-              {currentPage || "Home"}
+              {activeSection.page}
             </span>
           </div>
 

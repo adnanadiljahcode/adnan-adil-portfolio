@@ -63,6 +63,20 @@ const ExperienceCard = ({ item, index }: { item: ExperienceItem; index: number }
   );
 
   if (item.link) {
+    const isExternal = item.link.startsWith("http://") || item.link.startsWith("https://");
+
+    if (isExternal) {
+      return (
+        <a 
+          href={item.link} 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          {content}
+        </a>
+      );
+    }
+
     return <Link to={item.link}>{content}</Link>;
   }
 

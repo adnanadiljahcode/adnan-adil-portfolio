@@ -1,41 +1,58 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
-  const navItems = [
-    { number: "1", label: "Work" },
-    { number: "2", label: "About" },
-    { number: "3", label: "Education" },
-    { number: "4", label: "Contact" },
-  ];
+  const [currentTime, setCurrentTime] = useState("");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const localTime = now.toLocaleTimeString("en-US", {
+        timeZone: "Asia/Karachi",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      });
+      setCurrentTime(localTime);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <motion.footer 
-      className="py-16 px-8"
+      id="contact"
+      className="py-10 px-8 border-t border-foreground/10"
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      whileInView={{ opacity: 1.5 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1.5 }}
     >
-      {/* Bottom Navigation */}
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-16">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={`#${item.label.toLowerCase()}`}
-              className="flex items-center gap-3 text-mono text-sm text-foreground/70 hover:text-foreground transition-colors duration-200"
-            >
-              <span className="text-foreground/50">{item.number}</span>
-              <span>{item.label}</span>
-            </a>
-          ))}
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-mono text-xs text-foreground/60">
+        
+        {/* 1. Copyright */}
+        <p className="text-foreground/40">
+          © Adnan Adil 2026
+        </p>
+        | 
+        {/* 2. Direct Email Link */}
+        <a
+          href="mailto:adnan.adil.jah@gmail.com"
+          className="flex items-center gap-1 hover:text-foreground transition-colors group"
+        >
+          <span>adnan.adil.jah@gmail.com</span>
+          <ArrowUpRight className="w-3 h-3 text-foreground/30 group-hover:text-foreground/70 transition-colors" />
+        </a>
+        |
+        {/* 3. Location & Live Time */}
+        <div className="flex items-center gap-2 text-foreground/50">
+          <span>Karachi, PK</span>
+          <span>{currentTime || "UTC+5"}</span>
         </div>
 
-        {/* Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-foreground/10">
-          <p className="text-mono text-xs text-foreground/50">© Adnan Adil 2026</p>
-          <p className="text-mono text-xs text-foreground/50">Made in Karachi</p>
-        </div>
       </div>
     </motion.footer>
   );
