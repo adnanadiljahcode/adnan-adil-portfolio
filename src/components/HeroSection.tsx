@@ -26,7 +26,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-8 pt-32 pb-16">
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center px-8 pt-32 pb-16">
       <motion.div
         variants={containerVariants}
         initial="hidden"
