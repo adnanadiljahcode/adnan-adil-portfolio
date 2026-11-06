@@ -26,16 +26,16 @@ const experiences: ExperienceItem[] = [
 
 const personalProjects: ExperienceItem[] = [
   {
-    company: "Easy Bookings",
-    dateRange: "",
-    role: "https://portrait-time-picker.lovable.app/",
-    link: "https://portrait-time-picker.lovable.app/",
-  },
-  {
     company: "Little Fern's Cozy Corner",
     dateRange: "",
     role: "https://cozy-fern-menu.lovable.app/",
     link: "https://cozy-fern-menu.lovable.app/",
+  },
+  {
+    company: "Easy Bookings",
+    dateRange: "",
+    role: "https://portrait-time-picker.lovable.app/",
+    link: "https://portrait-time-picker.lovable.app/",
   },
 ];
 
