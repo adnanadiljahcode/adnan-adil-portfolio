@@ -37,7 +37,7 @@ const HeroSection = () => {
         <motion.div className="mb-16" variants={itemVariants}>
           <h1 className="heading-display text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-foreground leading-[0.9] tracking-tight">
             <span className="block">ADNAN</span>
-            <span className="block mt-2 md:mt-4">ADIL</span>
+            <span className="block mt-2 md:mt-4">ADIL v1.0</span>
           </h1>
         </motion.div>
 
